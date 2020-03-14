@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background:grey;
+    color: white;
+    font-family:'sans-serif'
+}
+h1{
+    text-align: center;
+    /* border: solid black 2px; */
+    margin: 10px;
+
+}
+.inputs{
+    background:grey;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    margin: 10px;
+    padding: 10px;
+    /* border: solid 2px black;
+    border-radius: 10px; */
+    width: 50%;
+}
+.memes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    border: solid black 2px;
+    justify-content: center;
+    /* position: relative; */
+    /* height: 500px;; */
+}
+.img-div{
+    border: solid red 2px;
+    display: block;
+    margin: 5px;
+    position: relative;
+
+}
+.div-above{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 100px;
+    width: 100%;
+    margin: 5px;
+    /*  */
+    /* border: solid black 2px; */
+}
+.div-below{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 100%;
+    margin: 5px;
+    /* border: solid black 2px; */
+}
+
+/* .img-div button{
+
+} */
+img{
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+}
