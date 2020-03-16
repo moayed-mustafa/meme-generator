@@ -1,4 +1,5 @@
 // elements:
+const inputs = document.querySelector('.inputs');
 const urlInput = document.querySelector('#url-input');
 const aboveText = document.querySelector('#above-text');
 const belowText = document.querySelector('#below-text');
@@ -51,13 +52,6 @@ class Handler {
 
     }
 
-    clearInput() {
-        let clearingArray = [urlInput, aboveText, belowText];
-        for (let input of clearingArray) {
-            input.value = '';
-        }
-
-    }
     deleteImage(id){
     let deleteBtn = document.getElementById(id);
     deleteBtn.parentElement.remove();
@@ -66,11 +60,13 @@ class Handler {
 
 const makeMemes = new Handler();
 // event Listener:-
-submitButton.addEventListener('click',makeMemes.createMeme)
-submitButton.addEventListener('click', makeMemes.clearInput)
+submitButton.addEventListener('click', makeMemes.createMeme)
+
+submitButton.addEventListener('click', (e) => {
+    inputs.reset();
+})
 window.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
-
         makeMemes.createMeme(e)
     }
 
