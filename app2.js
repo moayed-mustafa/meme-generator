@@ -25,9 +25,10 @@ class Handler {
                 ImgDiv.innerHTML = `
                 <img src="${src}" alt="">
                 <button id = '${id}'
-                class = 'btn btn-danger btn-block' onClick = makeMemes.deleteImage(this.id)
+                class = 'btn btn-danger btn-block ' onClick = makeMemes.deleteImage(this.id)
                 '>Delete</button>
                 `
+
                 memes.append(ImgDiv);
                 id++;
             }
@@ -35,7 +36,7 @@ class Handler {
             // add text above
             let aboveTextDiv = document.createElement('div')
             aboveTextDiv.classList.add('div-above');
-            console.log(aboveTextDiv)
+            // console.log(aboveTextDiv)
             aboveTextDiv.innerText = aboveText.value
             ImgDiv.append(aboveTextDiv);
 
@@ -66,4 +67,11 @@ class Handler {
 const makeMemes = new Handler();
 // event Listener:-
 submitButton.addEventListener('click',makeMemes.createMeme)
-submitButton.addEventListener('click',makeMemes.clearInput)
+submitButton.addEventListener('click', makeMemes.clearInput)
+window.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+
+        makeMemes.createMeme(e)
+    }
+
+})
