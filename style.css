@@ -7,11 +7,9 @@ body{
     background:grey;
     color: white;
     font-family:'sans-serif';
-    /* overflow: hidden; */
 }
 h1{
     text-align: center;
-    /* border: solid black 2px; */
     margin: 10px;
 
 }
@@ -25,8 +23,7 @@ h1{
 .container{
     margin: 10px;
     padding: 10px;
-    /* border: solid 2px black;
-    border-radius: 10px; */
+
     width: 50%;
 }
 .memes{
@@ -35,8 +32,7 @@ h1{
     margin: 10px;
     border: solid black 2px;
     justify-content: center;
-    /* position: relative; */
-    /* height: 500px;; */
+
 }
 .img-div{
     border: solid red 2px;
@@ -52,11 +48,8 @@ h1{
     position: absolute;
     top: 15px;
     left: 45%;
-    /* left: 100px; */
     width: 100%;
     margin: 5px;
-    /*  */
-    /* border: solid black 2px; */
 }
 .div-below{
     color: white;
@@ -65,19 +58,14 @@ h1{
     position: absolute;
     bottom: 50px;
     left: 45%;
-    /* left: 100px; */
     width: 100%;
     margin: 5px;
-    /* border: solid black 2px; */
 }
 
-/* .img-div button{
 
-} */
 img{
-    /* width: 350px; */
     width: 100%;
     height: auto;
-    /* height: 450px; */
-    margin: 10px;
+   padding: 10px;
+
 }

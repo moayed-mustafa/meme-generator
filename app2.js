@@ -1,4 +1,3 @@
-// elements:
 const inputs = document.querySelector('.inputs');
 const urlInput = document.querySelector('#url-input');
 const aboveText = document.querySelector('#above-text');
@@ -9,7 +8,6 @@ let ImgDiv=document.createElement('div');
 let id = 1;
 
 
-// class handler
 class Handler {
     constructor() {
 
@@ -34,14 +32,11 @@ class Handler {
                 id++;
             }
 
-            // add text above
             let aboveTextDiv = document.createElement('div')
             aboveTextDiv.classList.add('div-above');
-            // console.log(aboveTextDiv)
             aboveTextDiv.innerText = aboveText.value
             ImgDiv.append(aboveTextDiv);
 
-            // addTextBelow
             let belowTextDiv = document.createElement('div')
             belowTextDiv.classList.add('div-below');
             console.log(belowTextDiv.value)
@@ -59,7 +54,6 @@ class Handler {
 }
 
 const makeMemes = new Handler();
-// event Listener:-
 submitButton.addEventListener('click', makeMemes.createMeme)
 
 submitButton.addEventListener('click', (e) => {
@@ -67,7 +61,8 @@ submitButton.addEventListener('click', (e) => {
 })
 window.addEventListener('keyup', (e) => {
     if (e.keyCode === 13) {
-        makeMemes.createMeme(e)
+        makeMemes.createMeme(e);
+        inputs.reset();
     }
 
 })
